@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+  <body>
+  <h1>Please enter the last name of your favorite senator to their most recently sponsored bills.</h1>
+      <ul>
+      <% if list.length > 0 %>
+          <%list.each do |x|%>
+              <%if x == ""%>
+                <li>"(no title)"</li>
+              <%else%>
+                <li><%=x%></li>
+              <%end%>
+          <%end%>
+        <%end%>
+      </ul>
+    <form action = "/button_click">
+      <input type = "text" name = "senator" placeholder="Your senator">
+        <button>Click me plz</button>
+    </form>
+  </body>
+</html>

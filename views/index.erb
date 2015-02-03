@@ -1,0 +1,13 @@
+<!DOCTYPE>
+<html>
+  <body>
+  <h1>Please enter the last name of your favorite senator to see his/her Twitter handle.</h1>
+      <% if handle.length > 1 %>
+          <h2>Your senator's Twitter handle is @ "<%= handle %>".</h2>
+      <% end %>
+    <form action = "/button_click">
+      <input type = "text" name = "senator" placeholder="Your senator">
+        <button>Click me plz</button>
+    </form>
+  </body>
+</html>
